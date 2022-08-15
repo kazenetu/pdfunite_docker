@@ -1,0 +1,7 @@
+FROM ubuntu:18.04
+
+RUN apt-get update && apt-get install -y curl libunwind8 gettext apt-transport-https wget gpg software-properties-common git nano
+
+RUN apt-get update && apt install -y poppler-utils
+
+WORKDIR /source
